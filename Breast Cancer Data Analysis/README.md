@@ -52,17 +52,17 @@ Problem Two: Breast Cancer Data
     a separate csv file.I observed that the attribute Bare Nuclei only
     contains the missing value.
    ``` R
-    &gt; cancer\_data &lt;-
+    &gt; cancer_data &lt;-
     read.table(“breast-cancer-wisconsin.data”,sep=“,”,na.strings=“?”) &gt;
-    names(cancer\_data) &lt;- c(“SCN”,“Clump Thickness”,“Uniformity of
+    names(cancer_data) &lt;- c(“SCN”,“Clump Thickness”,“Uniformity of
     Cell Size”, + “Uniformity of Cell Shape”,“Marginal Adhesion”,“Single
     Epithelial Cell Size”,“Bare Nuclei”, + “Bland Chromatin”,“Normal
     Nucleoli”,“Mitoses”,“Class”) &gt;
-    write.table(cancer\_data,“cancer\_data\_before\_cleaning.csv”,sep=“,”,row.names=FALSE) &gt;
-    str(cancer\_data) &gt; install.packages(“timeSeries”) &gt;
+    write.table(cancer_data,“cancer_data_before_cleaning.csv”,sep=“,”,row.names=FALSE) &gt;
+    str(cancer_data) &gt; install.packages(“timeSeries”) &gt;
     library(“timeSeries”) &gt; missing\_values &lt;-
-    is.na(cancer\_data\[“Bare Nuclei”\]) &gt; missing\_SCN &lt;-
-    cancer\_data\[missing\_values, c(“SCN”)\] &gt; cleaned\_data
+    is.na(cancer_data[“Bare Nuclei”]) &gt; missing_SCN &lt;-
+    cancer_data[missing_values, c(“SCN”)] &gt; cleaned_data
     &lt;-cancer\_data\[complete.cases(cancer\_data),\] &gt;
     write.table(cleaned\_data,“cancer\_data\_after\_cleaning.csv”,sep=“,”,row.names=FALSE) &gt;
     missing\_SCN
