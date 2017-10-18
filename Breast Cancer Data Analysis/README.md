@@ -1,7 +1,7 @@
 
 Problem Two: Breast Cancer Data
 =========================
-
+(See Report Pdf to see the clearer version)
 1.  The data set $\Delta$ is collected from the University of Wisconsin
     Hospitals, Madison from Dr. William H. Wolberg. The size of $\Delta$
     is 699. The data set can be used to detect the malignant cancer or
