@@ -51,7 +51,7 @@ Problem Two: Breast Cancer Data
     SCNs are printed at the end of the code and $\Delta^*$ is stored in
     a separate csv file.I observed that the attribute Bare Nuclei only
     contains the missing value.
-   ``` R
+  
     &gt; cancer_data &lt;-
     read.table(“breast-cancer-wisconsin.data”,sep=“,”,na.strings=“?”) &gt;
     names(cancer_data) &lt;- c(“SCN”,“Clump Thickness”,“Uniformity of
@@ -69,7 +69,7 @@ Problem Two: Breast Cancer Data
 
     \[1\] 1057013 1096800 1183246 1184840 1193683 1197510 1241232 169356
     \[9\] 432809 563649 606140 61634 704168 733639 1238464 1057067
-```
+
     Moreover, I have found some duplicates. There are 8 duplicate data
     in the file. I removed it using the following R code. It will give
     the SCNs of the duplicate data and store the pruned data into a
